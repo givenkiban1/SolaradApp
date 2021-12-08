@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solarad App</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="main">
+        
+        <div class="header">
+            <div class="home"></div>
+            <div class="h-text">
+                <h2>Welcome Home!</h2>
+                <h5>Make The Sunlight Work For You</h5>
+            </div>
+        </div>
+
+        <div class="label">Householder Password</div>
+        
+        <div class="password">
+            <select>
+                <option>Select a household.</option>
+                <option>Mobeni</option>
+            </select>
+            <div class="p-input">
+                <input type="password" name="password" placeholder="Password">
+            </div>
+            <div class="p-button">
+                <button>Login</button>
+            </div>
+        </div>
+
+        <div class="label">Status</div>
+        
+        <div class="status">
+            <div class="table">
+                <div class="title">
+                    <div class="energy">Energy</div>
+                    <div class="battery">Battery</div>
+                </div>
+                <br/>
+                <div class="energy-b">
+                    <div class="energy-text">
+                        <div>Power Produced (KWh)</div>
+                        <div class="display">40</div>
+                        <br/>
+                        <br/>
+                        <br/>
+                        <div>Power Consumed (KWh)</div>
+                        <div class="display">40</div>
+                    </div>
+                </div>
+                <div class="battery-b">
+                    <div class="battery-text">
+                        <div>Battery (%)</div>
+                        <div class="display">40</div>
+                        <br/>
+                        <br/>
+                        <br/>
+                        <div>Charge Battery</div>
+                        <div class="toggle toggle-grey" id="toggle">
+                            <input type="checkbox" id="chxbox"/>
+                            <div class="initial" id="toggle-ball" onclick="toggle(1)"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="label">Graph Selection</div>
+        
+        <div class="status">
+            <div class="table">
+                <div class="energy-b">
+                    <div class="graph">
+                    
+                    </div>
+                </div>
+                <div class="battery-b">
+                    <div class="battery-text">
+                        <div>Energy Graph</div>
+                        <div class="toggle toggle-grey" id="toggle1">
+                            <input type="checkbox" id="chxbox1"/>
+                            <div class="initial" id="toggle-ball1" onclick="toggle(2)"></div>
+                        </div>
+
+                        <br/>
+                        <br/>
+                        <br/>
+
+                        <div>Battery Graph</div>
+                        <div class="toggle toggle-grey" id="toggle2">
+                            <input type="checkbox" id="chxbox2"/>
+                            <div class="initial" id="toggle-ball2" onclick="toggle(3)"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+<script src="index.js" type="text/javascript"></script>
+</html>
